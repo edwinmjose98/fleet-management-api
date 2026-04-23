@@ -6,6 +6,7 @@ import com.fleetmanagement.repository.*;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Set;
+import com.fleetmanagement.exception.ResourceNotFoundException;
 
 @Service
 public class VehicleService {
@@ -29,13 +30,13 @@ public class VehicleService {
 
     public Vehicle getVehicleByDeviceId(String deviceId) {
         return vehicleRepository.findByDeviceId(deviceId)
-                .orElseThrow(() -> new RuntimeException("Vehicle not found: " + deviceId));
+                .orElseThrow(() -> new ResourceNotFoundException("Vehicle not found: " + deviceId));
     }
 
     public VehicleSubscription assignSubscription(String deviceId, String packageName) {
         Vehicle vehicle = getVehicleByDeviceId(deviceId);
         SubscriptionPackage pkg = packageRepository.findByName(packageName)
-                .orElseThrow(() -> new RuntimeException("Package not found: " + packageName));
+                .orElseThrow(() -> new ResourceNotFoundException("Package not found: " + packageName));
 
         VehicleSubscription subscription = subscriptionRepository
                 .findByVehicle(vehicle)
@@ -49,7 +50,7 @@ public class VehicleService {
     public Set<Feature> getVehicleFeatures(String deviceId) {
         Vehicle vehicle = getVehicleByDeviceId(deviceId);
         VehicleSubscription subscription = subscriptionRepository.findByVehicle(vehicle)
-                .orElseThrow(() -> new RuntimeException("No subscription found for vehicle: " + deviceId));
+                .orElseThrow(() -> new ResourceNotFoundException("No subscription found for vehicle: " + deviceId));
         return subscription.getSubscriptionPackage().getFeatures();
     }
 
