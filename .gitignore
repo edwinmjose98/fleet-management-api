@@ -14,3 +14,4 @@ application-local.properties
 # OS
 .DS_Store
 Thumbs.db
+src/main/resources/application.properties
