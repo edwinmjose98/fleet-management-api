@@ -1,4 +1,4 @@
-package com.taskmanagement.model;
+package com.fleetmanagement.model;
 
 public enum Role {
     USER, ADMIN

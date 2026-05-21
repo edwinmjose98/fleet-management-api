@@ -1,4 +1,4 @@
-package com.taskmanagement.exception;
+package com.fleetmanagement.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

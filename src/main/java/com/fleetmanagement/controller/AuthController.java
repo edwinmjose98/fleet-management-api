@@ -1,8 +1,8 @@
-package com.taskmanagement.controller;
+package com.fleetmanagement.controller;
 
-import com.taskmanagement.model.User;
-import com.taskmanagement.repository.UserRepository;
-import com.taskmanagement.security.JwtUtil;
+import com.fleetmanagement.model.User;
+import com.fleetmanagement.repository.UserRepository;
+import com.fleetmanagement.security.JwtUtil;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.*;

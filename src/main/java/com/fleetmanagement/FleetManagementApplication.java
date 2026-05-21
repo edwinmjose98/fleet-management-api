@@ -1,4 +1,4 @@
-package com.taskmanagement;
+package com.fleetmanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

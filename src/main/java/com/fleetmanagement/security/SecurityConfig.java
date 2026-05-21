@@ -1,4 +1,4 @@
-package com.taskmanagement.security;
+package com.fleetmanagement.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

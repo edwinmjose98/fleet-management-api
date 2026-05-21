@@ -1,4 +1,4 @@
-package com.taskmanagement.security;
+package com.fleetmanagement.security;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

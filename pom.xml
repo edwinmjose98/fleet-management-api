@@ -8,10 +8,10 @@
 		<version>3.5.14-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.taskmanagement</groupId>
-	<artifactId>task-management-api</artifactId>
+	<groupId>com.fleetmanagement</groupId>
+	<artifactId>fleet-management-api</artifactId>
 	<version>1.0.0</version>
-	<name>task-management-api</name>
+	<name>fleet-management-api</name>
 	<description/>
 	<url/>
 	<licenses>
