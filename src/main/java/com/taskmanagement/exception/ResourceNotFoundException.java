@@ -1,4 +1,4 @@
-package com.fleetmanagement.exception;
+package com.taskmanagement.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

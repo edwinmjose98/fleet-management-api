@@ -1,9 +1,9 @@
-package com.fleetmanagement.repository;
+package com.taskmanagement.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.fleetmanagement.model.User;
+import com.taskmanagement.model.User;
 
 import java.util.Optional;
 

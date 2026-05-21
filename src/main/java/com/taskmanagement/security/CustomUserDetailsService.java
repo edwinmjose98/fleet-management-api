@@ -1,7 +1,7 @@
-package com.fleetmanagement.security;
+package com.taskmanagement.security;
 
-import com.fleetmanagement.model.User;
-import com.fleetmanagement.repository.UserRepository;
+import com.taskmanagement.model.User;
+import com.taskmanagement.repository.UserRepository;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.*;
